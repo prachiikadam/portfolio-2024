@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -11,39 +11,41 @@
 
 <body>
     <div class="flex flex-row">
-        <div class="bg-black h-screen w-72 flex flex-col top-0 fixed    ">
+        <div class="bg-black h-screen w-72 flex flex-col top-0 fixed">
             <div>
                 <img class="rounded-full w-32 m-auto my-14" src="./assets/user1.jpg" alt="">
             </div>
             <div class="text-white mx-auto"> Prachi Kadam</div>
             <div class="flex flex-row mx-auto my-4">
-                <a href="https://github.com/prachiikadam" target="_blank"><img class="rounded-full w-6 mx-2" src="./assets/githubLogo.png" alt="githubLogo"></a>
-                <a href="https://www.linkedin.com/in/prachi-kadam-63a0b1188/" target="_blank"><img class="rounded-full w-6 mx-2" src="./assets/linkedinLogo.png" alt="LinkedinLogo"></a>
+                <a href="https://github.com/prachiikadam" target="_blank"><i class="fa-brands fa-github text-2xl mr-4 ml-2 text-white"></i></a>
+                <a href="https://www.linkedin.com/in/prachi-kadam-63a0b1188/" target="_blank"> <i class="fa-brands fa-linkedin  text-2xl mr-4 ml-2 text-white"></i></a>
 
             </div>
             <div class="mt-4">
-                <div class="text-white my-6 cursor-pointer mx-20 hover:text-blue-500 "> Home</div>
-                <div class="text-white my-6 cursor-pointer mx-20"> About</div>
-                <div class="text-white my-6 mx-20 cursor-pointer"> Resume</div>
-                <div class="text-white my-6 mx-20 cursor-pointer"> Contact</div>
+                <a href="#home" > <div class="text-white my-6 cursor-pointer mx-20 hover:text-blue-500 active:text-blue-800 transition-all duration-1000"> <i class="fa-solid fa-house mr-3"></i> Home</div></a>
+                <a href="#about" > <div class="text-white my-6 cursor-pointer mx-20 hover:text-blue-500 transition-all duration-1000"><i class="fa-solid fa-user mr-3"></i> About</div></a>
+                <a href="#portfolio" > <div class="text-white my-6 mx-20 cursor-pointer hover:text-blue-500 transition-all duration-1000"> <i class="fa-solid fa-book-open mr-3"></i>Portfolio</div></a>
+                <a href="#contact" > <div class="text-white my-6 mx-20 cursor-pointer hover:text-blue-500 transition-all duration-1000"> <i class="fa-solid fa-phone mr-3"></i>Contact</div></a>
+                <a href="./resume.pdf" target="_blank" > <div class="text-white my-6 mx-20 cursor-pointer hover:text-blue-500 "> <i class="fa-solid fa-file mr-3"></i> Resume </div></a>
+
             </div>
 
         </div>
         <div>
-            <div>
+            <div id="home">
            
                 <div class="bg-cover w-screen h-screen text-white flex flex-col  justify-center" style="background-image: url(./assets/backgroundProfile.jpeg)">
                    <h1 class="text-gray-600 text-5xl font-bold py-9 mx-96"> Prachi Kadam </h1>
-                   <p class="text-white mx-96">I'm developer</p>
+                   <p class="text-white mx-96  after:content-[''] after:relative after:w-20 after:h-1 after:bg-gray-800 after:block after:left-9 after:bottom-0">I'm a developer</p>
                 </div>
             </div>
-            <div class="ml-[300px] mt-[50px]">
+            <div id="about" class="ml-[300px] mt-[50px]">
                 <h2 class="text-[32px] font-bold text-[#173b6c]  after:mt-4 after:mb-4 relative  after:content-[''] after:relative after:w-12 after:h-1 after:bg-blue-400 after:block after:top-0 after:bottom-0 ">About</h2>
                 <p><i class="fa-solid fa-chevron-right text-blue-800 mr-2"></i>I completed BTech in electronics engineering in 2020 from Walchand college of engineering , Sangli</p>
-                <p> <i class="fa-solid fa-chevron-right  text-blue-800 mr-2"></i>A full stack developer with 2 years 8 months of experience in developing web applications , resolving bugs</p>
+                <p> <i class="fa-solid fa-chevron-right  text-blue-800 mr-2"></i>A full stack developer with 2 years 8 months of experience in developing full stack web applications</p>
                 <p> <i class="fa-solid fa-chevron-right  text-blue-800 mr-2"></i>I am dedicated to perfecting my craft by learning technologies. I want to contribute to industry all that I know and can do</p>
             </div>
-            <div class="ml-[293px] mt-[50px] bg-[#f5f8fd] ">
+            <div  id="skills" class="ml-[293px] mt-[50px] bg-[#f5f8fd] ">
                 <h2 class="text-[32px] font-bold text-[#173b6c]  after:mt-4 after:mb-4 relative  after:content-[''] after:relative after:w-12 after:h-1 after:bg-blue-400 after:block after:top-0 after:bottom-0 ">Skills</h2>
                 <div class="flex flex-row">
                 <div class="flex flex-col w-full">
@@ -102,12 +104,33 @@
                 </div>
                 </div>
             </div>
-            <div class="ml-[293px] mt-[50px]  ">
+            <div id="portfolio" class="ml-[293px] mt-[50px] mb-[100px]">
                 <h2 class="text-[32px] font-bold text-[#173b6c]  after:mt-4 after:mb-4 relative  after:content-[''] after:relative after:w-12 after:h-1 after:bg-blue-400 after:block after:top-0 after:bottom-0 ">Portfolio</h2>
-                
+                <div class="flex flex-row flex-wrap items-center justify-around">
+                    <div class="w-[350px] h-[350px] mr-2">
+                        <img src="./assets/digiSign.png" class="h-[80%] w-full object-contain "/>
+                        <a href="https://github.com/prachiikadam/digital-sign"><i class="fa-brands fa-github text-2xl mr-4 ml-2"></i></a>
+                        <a href=" https://digital-sign-5fhs.vercel.app/"><i class="fa-solid fa-link text-2xl "></i></a>
+                        <p class="p-2">Developed small web application for signing digitally and to download the same using canvas</p>
+
+                    </div>
+                    <div class="w-[350px] h-[350px] mr-2">
+                        <img src="./assets/videoplayer.png" class="h-[80%] w-full object-contain "/>
+                        <a href="https://github.com/prachiikadam/videoplaylist"><i class="fa-brands fa-github text-2xl mr-4 ml-2"></i></a>
+                        <a href="https://videoplaylist.vercel.app/"><i class="fa-solid fa-link text-2xl"></i></a>
+                        <p class="p-2">Developed an application which allows creating a playlist which has default videos , maintained its last watched position using context</p>
+                    </div>
+                    <div class="w-[350px] h-[350px] mr-2">
+                        <img src="./assets/tourWebsite.jpg" class="h-[80%] w-full object-contain "/>
+                        <a href="https://github.com/prachiikadam/Travel-and-Tourism"><i class="fa-brands fa-github text-2xl mr-4 ml-2"></i></a>
+                        <!-- <a href="https://github.com/prachiikadam/Travel-and-Tourism"><i class="fa-solid fa-link text-2xl"></i></a> -->
+                        <p class="p-2">Contributed to building front end components using React.js, Developed server side business logic using express.js</p>
+
+                    </div>
+                </div>
             </div>
 
-            <div class="ml-[293px] mt-[50px] bg-[#f5f8fd] ">
+            <div id="contact" class="ml-[293px] mt-[50px] bg-[#f5f8fd] ">
                 <h2 class="text-[32px] font-bold text-[#173b6c]  after:mt-4 after:mb-4 relative  after:content-[''] after:relative after:w-12 after:h-1 after:bg-blue-400 after:block after:top-0 after:bottom-0  ">Contact</h2>
                 <!-- <p>Feel free to reach out to me </p> -->
                 <div class="flex flex-col">
